@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# SessionTab
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+SessionTab is a chrome extension built to help you manage your open tabs. 
 
-## Available Scripts
+### Motivation
 
-In the project directory, you can run:
+I always find myself in front of an excessive amount of open tabs and windows. The way I structure my browsing sessions is by keeping relevant tabs under a specific window. Whatever I do, I usually keep at least 2 windows open, one for miscellaneous tabs (social media, music, netflix, etc.), and another one for a specific task I am doing. I am not sure about you, but personally, I almost never work on a task until completion. Most of the time, I interleave tasks. For example, one day I could be working on a programming project and having tabs open for docs, for stackoverflow, github issues, etc. Then the following day, I find myself working on a course assignment or reviewing for an exam. The result is 3 windows open with a ton of tabs in each. I don't like to close the window because I don't want to lose my "browsing progress". 
 
-### `yarn start`
+One solution is using bookmarks to save all open tabs in different windows. This could work, however, i'm not a big fan of chrome bookmarks. I always get lost trying to find, add, or deleting bookmarks. In addition, I wanted to be **only** a few clicks away from "saving" and "retrieving" my sessions.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+I briefly looked for a chrome extension online, but most of them were too complicated for what I needed, so I created an opportunity to build my own chrome extension. 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+A chrome extension easily hooks into the browsing experience. It wouldn't require me to open a new window, which makes the experience smoother. 
 
-### `yarn test`
+This extension was built with React, emotion, reach-ui, and formik. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `yarn build`
+If you wish to play around with the source code, simply download or `git clone` the repository.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+git clone git@github.com:zakariaelas/SessionTab.git
+cd SessionTab
+yarn install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Usage
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+If you wish to use SessionTab in your Chrome browser, follow these instructions:
 
-### `yarn eject`
+1. Download and extract the repository.
+2. Open your Chrome browser, and then go to options -> More tools -> Extensions :
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![screenshot1](https://user-images.githubusercontent.com/33696020/59946998-013e2080-9464-11e9-84b4-89a7425c24a6.jpg)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Click on "Load unpacked" on the upper left corner. Make sure the developer mode is activated:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+![screenshot3](https://user-images.githubusercontent.com/33696020/59947424-23846e00-9465-11e9-91b7-569797e273ab.jpg)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+4. Open your SessionTab folder.
 
-## Learn More
+5. Notice the SessionTab icon added to the right of the search bar:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![screenshot4](https://user-images.githubusercontent.com/33696020/59947636-a3123d00-9465-11e9-9903-4969f5367e7b.jpg)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![Screenshot5](https://user-images.githubusercontent.com/33696020/59957462-86d7c580-9490-11e9-81dc-a3a5b476d10a.jpg)
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
