@@ -23,6 +23,10 @@ git clone git@github.com:zakariaelas/SessionTab.git
 cd SessionTab
 yarn install
 ```
+Once you finish hacking, you should run the following command:
+```
+yarn build
+```
 
 ## Usage
 
@@ -31,17 +35,17 @@ If you wish to use SessionTab in your Chrome browser, follow these instructions:
 1. Download and extract the repository.
 2. Open your Chrome browser, and then go to options -> More tools -> Extensions :
 
-![screenshot1](https://user-images.githubusercontent.com/33696020/59946998-013e2080-9464-11e9-84b4-89a7425c24a6.jpg)
+![screenshot1](https://user-images.githubusercontent.com/33696020/102027503-d147b300-3da4-11eb-9d07-bbd255b8d0a7.png)
 
 3. Click on "Load unpacked" on the upper left corner. Make sure the developer mode is activated:
 
 ![screenshot3](https://user-images.githubusercontent.com/33696020/59947424-23846e00-9465-11e9-91b7-569797e273ab.jpg)
 
-4. Open your SessionTab folder.
+4. Open your SessionTab build folder.
 
 5. Notice the SessionTab icon added to the right of the search bar:
 
-![screenshot4](https://user-images.githubusercontent.com/33696020/59947636-a3123d00-9465-11e9-9903-4969f5367e7b.jpg)
+![screenshot4](https://user-images.githubusercontent.com/33696020/102027583-6054cb00-3da5-11eb-9d9d-8e5b4cdd93b2.jpg)
 
-![Screenshot5](https://user-images.githubusercontent.com/33696020/59957462-86d7c580-9490-11e9-81dc-a3a5b476d10a.jpg)
+![Screenshot5](https://user-images.githubusercontent.com/33696020/102027623-a6aa2a00-3da5-11eb-8731-d46c1d341a19.jpg)
 
