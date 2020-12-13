@@ -1,16 +1,17 @@
 {
   "manifest_version": 2,
 
-  "name": "My Extension",
-  "description": "This extension is a starting point to create a real Chrome extension",
-  "version": "0.0.1",
+  "name": "SessionTab",
+  "description": "This extension allows users to store open tabs under groups and retrieve them later",
+  "version": "1.0.0",
 
   "browser_action": {
     "default_popup": "index.html",
-    "default_title": "Open the popup"
+    "default_title": "SessionTab"
   },
   "icons": {
-    "128": "logo192.png"
+    "48": "logo48.png",
+    "192": "logo192.png"
   },
   "content_security_policy": "script-src 'self' 'sha256-LH022Hg0FZb9J4VDTDF8irCV5jkQZlVWYOtiw/Yf4FU='; object-src 'self'",
   "permissions": [
