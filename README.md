@@ -49,12 +49,17 @@ If you wish to use SessionTab in your Chrome browser, follow these instructions:
 
 6. Start Saving!
 
-![screenshot5](https://user-images.githubusercontent.com/33696020/102027623-a6aa2a00-3da5-11eb-8731-d46c1d341a19.jpg)
+- The top right button icon is used to create a new **group**. A group is simply a collection of tabs.
 
-![screenshot6](https://user-images.githubusercontent.com/33696020/102029894-a2373e80-3db0-11eb-91bd-e876e68a90a5.jpg)
+![add_group](https://user-images.githubusercontent.com/33696020/102029894-a2373e80-3db0-11eb-91bd-e876e68a90a5.jpg)
 
-![screenshot7](https://user-images.githubusercontent.com/33696020/102029804-36ed6c80-3db0-11eb-8b99-ad3776dba6b2.jpg)
+- Group added! The "X" button icon on the right can be used to remove tabs in a group.
+![group_list_view](https://user-images.githubusercontent.com/33696020/102027623-a6aa2a00-3da5-11eb-8731-d46c1d341a19.jpg)
 
+- The three dots open a menu. You can either open all the tabs of a group in a separate window, edit a group (change the name or bulk edit the tabs), or remove a group.
 ![screenshot8](https://user-images.githubusercontent.com/33696020/102029944-e32f5300-3db0-11eb-8c64-83a8e564c261.jpg)
 
+- If you try to remove a group, you get a confirmation dialog to avoid deleting a group mistakenly. 
 ![screenshot9](https://user-images.githubusercontent.com/33696020/102029943-e1fe2600-3db0-11eb-812c-704cad0ece1c.jpg)
+
+That's it. It's definitely not the most impressive chrome extension you'll come across, but it's simple and does the job **quickly**. If it solved my problem, it might solve yours.
