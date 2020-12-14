@@ -1,7 +1,7 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
 import { css, jsx } from '@emotion/react';
-import { Menu } from '@reach/menu-button';
+import { Menu, MenuButton } from '@reach/menu-button';
 import { ReactComponent as DeleteIcon } from '../../assets/delete.svg';
 import { ReactComponent as DotsIcon } from '../../assets/dots.svg';
 import { ReactComponent as EditIcon } from '../../assets/edit.svg';
@@ -10,7 +10,6 @@ import { DELETE_GROUP, EDIT_GROUP } from '../../context/action-types';
 import { useAppState } from '../../context/app';
 import {
   Button,
-  CustomMenuButton,
   CustomMenuItem,
   CustomMenuList,
   IconButton,
@@ -28,11 +27,12 @@ export const GroupMenu = ({ group }) => {
   const { dispatch } = useAppState();
   return (
     <Menu>
-      <CustomMenuButton onClick={(e) => e.stopPropagation()}>
-        <IconButton>
-          <DotsIcon />
-        </IconButton>
-      </CustomMenuButton>
+      <MenuButton
+        as={IconButton}
+        onClick={(e) => e.stopPropagation()}
+      >
+        <DotsIcon />
+      </MenuButton>
       <CustomMenuList onClick={(e) => e.stopPropagation()}>
         <CustomMenuItem onClick={openInNewWindow(group.tabs)}>
           <OpenWindowIcon />

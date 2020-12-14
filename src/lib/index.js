@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import { AccordionButton } from '@reach/accordion';
 import { CustomCheckboxContainer } from '@reach/checkbox';
 import { Dialog as ReachDialog } from '@reach/dialog';
-import { MenuButton, MenuItem, MenuList } from '@reach/menu-button';
+import { MenuItem, MenuList } from '@reach/menu-button';
 
 export const AppContainer = styled.div({
   width: '480px',
@@ -28,22 +28,8 @@ export const GroupItemButton = styled(AccordionButton)({
   '&:hover': {
     background: '#f0f4f8',
   },
-  fontFamily: `'Jost', sans-serif`,
+  fontFamily: `'Cabin', sans-serif`,
   fontSize: '14px',
-});
-
-export const CustomMenuButton = styled(MenuButton)({
-  padding: '8px',
-  borderRadius: '50%',
-  transition: 'background .3s ease-in-out',
-  // transition: 'transform .2s ease-out',
-  border: 'none',
-  background: 'none',
-  display: 'flex',
-  '&:hover': {
-    background: '#E0E8F9',
-  },
-  cursor: 'pointer',
 });
 
 export const CustomMenuItem = styled(MenuItem)({
@@ -151,61 +137,11 @@ export const IconButton = styled.button({
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-  background: '#f0f4f8',
   border: `1px solid #f0f4f8`,
   cursor: 'pointer',
   position: 'relative',
   overflow: 'hidden',
-  '&:after': {
-    content: '""',
-    display: 'block',
-    position: 'absolute',
-    width: '100%',
-    height: '100%',
-    top: 0,
-    left: 0,
-    pointerEvents: 'none',
-    backgroundImage:
-      'radial-gradient(circle, #000 10%, transparent 10.01%)',
-    backgroundRepeat: 'no-repeat',
-    backgroundPosition: '50%',
-    transform: 'scale(10,10)',
-    opacity: 0,
-    transition: 'transform .5s opacity 1s',
-  },
-  '&:active:after': {
-    transform: 'scale(0,0)',
-    opacity: '.2',
-    transition: '0s',
-  },
 });
-
-// const RippleEffect = keyframes`
-//   from {
-//     transform: scale(0);
-//     opacity: 1
-//   }
-//   to{
-//     transform: scale(4);
-//     opacity: 0;
-//   }
-// `;
-
-// const SpanRipple = styled.span({
-//   position: 'absolute',
-//   borderRadius: '50%',
-//   animation: `${RippleEffect} 600ms linear`,
-//   backgroundColor: 'rgba(255, 255, 255, 0.7)',
-// });
-
-// export const IconButton = ({ children, ...props }) => {
-//   return (
-//     <IconButtonCSS {...props}>
-//       {children}
-//       <SpanRipple />
-//     </IconButtonCSS>
-//   );
-// };
 
 export const Button = styled.button(
   {
@@ -214,7 +150,7 @@ export const Button = styled.button(
     borderRadius: '4px',
     cursor: 'pointer',
     transition: 'all .2s ease-in',
-    fontFamily: `'Jost', sans-serif`,
+    fontFamily: `'Cabin', sans-serif`,
     fontWeight: 500,
   },
   ({ variant = 'text' }) => buttonVariants[variant],

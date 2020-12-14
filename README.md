@@ -45,7 +45,16 @@ If you wish to use SessionTab in your Chrome browser, follow these instructions:
 
 5. Notice the SessionTab icon added to the right of the search bar:
 
-![screenshot4](https://user-images.githubusercontent.com/33696020/102027583-6054cb00-3da5-11eb-9d9d-8e5b4cdd93b2.jpg)
+![screenshot4](https://user-images.githubusercontent.com/33696020/102029599-559f3380-3daf-11eb-98d9-afebe6c30f96.jpg)
 
-![Screenshot5](https://user-images.githubusercontent.com/33696020/102027623-a6aa2a00-3da5-11eb-8731-d46c1d341a19.jpg)
+6. Start Saving!
 
+![screenshot5](https://user-images.githubusercontent.com/33696020/102027623-a6aa2a00-3da5-11eb-8731-d46c1d341a19.jpg)
+
+![screenshot6](https://user-images.githubusercontent.com/33696020/102029894-a2373e80-3db0-11eb-91bd-e876e68a90a5.jpg)
+
+![screenshot7](https://user-images.githubusercontent.com/33696020/102029804-36ed6c80-3db0-11eb-8b99-ad3776dba6b2.jpg)
+
+![screenshot8](https://user-images.githubusercontent.com/33696020/102029944-e32f5300-3db0-11eb-8c64-83a8e564c261.jpg)
+
+![screenshot9](https://user-images.githubusercontent.com/33696020/102029943-e1fe2600-3db0-11eb-812c-704cad0ece1c.jpg)

@@ -8,6 +8,7 @@ import { Button, IconButton } from '../../lib';
 import { GroupForm } from '../GroupForm/GroupForm';
 import { Modal, ModalContents, ModalOpenButton } from '../Modal';
 import { GroupItem } from './GroupItem';
+import { GroupsOrEmptyState } from './GroupsOrEmptyState';
 
 export const Groups = () => {
   const { dispatch, state } = useAppState();
@@ -44,9 +45,11 @@ export const Groups = () => {
           margin-top: 24px;
         `}
       >
-        {state.groups.map((group) => (
-          <GroupItem group={group} />
-        ))}
+        <GroupsOrEmptyState groups={state.groups}>
+          {state.groups.map((group) => (
+            <GroupItem group={group} />
+          ))}
+        </GroupsOrEmptyState>
       </div>
     </div>
   );

@@ -3,7 +3,6 @@
 import { jsx } from '@emotion/react';
 import { ReactComponent as CloseIcon } from '../../assets/close.svg';
 import { ReactComponent as TabIcon } from '../../assets/tab.svg';
-import { AlertModal, Modal, ModalOpenButton } from '../Modal';
 
 export const Tab = ({ onDeleteTab, tab }) => {
   return (
@@ -31,14 +30,16 @@ export const Tab = ({ onDeleteTab, tab }) => {
       >
         {tab.title}
       </a>
-      <Modal>
-        <ModalOpenButton>
-          <CloseIcon css={{ cursor: 'pointer' }} />
-        </ModalOpenButton>
-        <AlertModal onConfirm={onDeleteTab}>
-          <p>Are you sure you want to delete this tab?</p>
-        </AlertModal>
-      </Modal>
+      <button
+        onClick={onDeleteTab}
+        css={{
+          cursor: 'pointer',
+          border: 'none',
+          background: 'transparent',
+        }}
+      >
+        <CloseIcon />
+      </button>
     </li>
   );
 };

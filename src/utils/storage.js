@@ -6,7 +6,6 @@ export const getFromStorage = (
   initialState = {},
 ) => {
   chrome.storage.local.get([key], (items) => {
-    console.log('how i get data', items);
     cb(items[key] || initialState);
   });
 };
