@@ -1,7 +1,6 @@
-import { v4 } from 'uuidv4';
+import { v4 } from 'uuid';
 import {
   ADD_GROUP,
-  ADD_TABS,
   DELETE_GROUP,
   DELETE_TAB,
   EDIT_GROUP,
@@ -23,7 +22,7 @@ export function reducer(state, action) {
       return {
         ...state,
         groups: [...state.groups].filter(
-          (g) => g.name !== action.payload,
+          (g) => g.id !== action.payload,
         ),
       };
     case EDIT_GROUP: {
@@ -39,23 +38,9 @@ export function reducer(state, action) {
         groups: newGroups,
       };
     }
-    case ADD_TABS: {
-      const groupIndex = state.groups.findIndex(
-        (g) => g.name === action.payload.name,
-      );
-      let newGroups = state.groups.slice();
-      newGroups[groupIndex] = {
-        ...newGroups[groupIndex],
-        ...action.payload.tabs,
-      };
-      return {
-        ...state,
-        groups: newGroups,
-      };
-    }
     case DELETE_TAB: {
       const groupIndex = state.groups.findIndex(
-        (g) => g.name === action.payload.groupName,
+        (g) => g.id === action.payload.groupId,
       );
       let newGroups = state.groups.slice();
       const newTabs = newGroups[groupIndex].tabs.filter(

@@ -36,13 +36,14 @@ export const GroupItem = ({ group }) => {
           <Tabs>
             {group.tabs.map((tab) => (
               <Tab
+                key={tab.url}
                 tab={tab}
                 onDeleteTab={async () => {
                   dispatch({
                     type: DELETE_TAB,
                     payload: {
                       tabTitle: tab.title,
-                      groupName: group.name,
+                      groupId: group.id,
                     },
                   });
                 }}

@@ -47,7 +47,7 @@ export const Groups = () => {
       >
         <GroupsOrEmptyState groups={state.groups}>
           {state.groups.map((group) => (
-            <GroupItem group={group} />
+            <GroupItem key={group.id} group={group} />
           ))}
         </GroupsOrEmptyState>
       </div>

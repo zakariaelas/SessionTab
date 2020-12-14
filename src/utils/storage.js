@@ -10,7 +10,7 @@ export const getFromStorage = (
   });
 };
 
-export const saveToStorage = (key, value, cb) => {
+export const saveToStorage = (key, value, cb = () => {}) => {
   chrome.storage.local.set({ [key]: value }, () => {
     cb(value);
   });

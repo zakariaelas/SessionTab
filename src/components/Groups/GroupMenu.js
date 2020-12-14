@@ -88,7 +88,7 @@ export const GroupMenu = ({ group }) => {
           </ModalOpenButton>
           <AlertModal
             onConfirm={async () => {
-              dispatch({ type: DELETE_GROUP, payload: group.name });
+              dispatch({ type: DELETE_GROUP, payload: group.id });
             }}
           >
             <p>Are you sure you want to delete this group?</p>
