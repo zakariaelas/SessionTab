@@ -12,7 +12,7 @@ I briefly looked for a chrome extension online, but most of them were too compli
 
 A chrome extension easily hooks into the browsing experience. It wouldn't require me to open a new window, which makes the experience smoother. 
 
-This extension was built with React, emotion, reach-ui, and formik. 
+This extension was built with React, emotion, reach-ui, and formik.
 
 ## Installation
 
